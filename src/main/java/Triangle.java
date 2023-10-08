@@ -40,7 +40,7 @@ public class Triangle implements Area{
     public double calculateArea() {
         double square = 0.0;
         double halfOfPerimeter;
-        halfOfPerimeter = firstSide+secondSide+thirdSide;
+        halfOfPerimeter = (firstSide+secondSide+thirdSide)/2;
         square = Math.sqrt(halfOfPerimeter*(halfOfPerimeter-firstSide)*(halfOfPerimeter-secondSide)*(halfOfPerimeter-thirdSide));
         return square;
     }
